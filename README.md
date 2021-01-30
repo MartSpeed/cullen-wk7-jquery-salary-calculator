@@ -12,7 +12,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 **[] - PURPOSE: create an application that records employee salaries and adds salaries up to report monthly cost**
 
-**[] - WIREWORKS = setting up the files that need to be used on HTML**
+**[x] - WIREWORKS = setting up the files that need to be used on HTML**
 
 - [x] a. - index.html
 
@@ -25,19 +25,20 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 **[] - OVERVIEW: The application should have an input form that collects _employee first name, last name, ID number, job title, annual salary_.**
 
 - [] Form to accept employee information
-  - [] create form
+  - [x] create form
   - [] add inputs & values
+    - push items into array
   - [] create classes & ID's
   - [] record classes & ID for quick reference
-  - [] first name
+  - [x] first name
   - [] first name function
-  - [] last name
+  - [x] last name
   - [] last name function
-  - [] ID number
+  - [x] ID number
   - [] ID number function
-  - [] job title
+  - [x] job title
   - [] job title function
-  - [] annual salary
+  - [x] annual salary
   - [] annual salary function
   - [] salary calculator
 
@@ -53,15 +54,15 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 - [] e. - if the total monthly cost more than $20,000 add a red background color to the total monthly cost
 
-- [] e1. - add background color using a conditional
+  - [] e1. - add background color using a conditional
 
 **[] - DELETE BUTTON: delete button that removes an employee from the DOM**
 
 - [] a. - removes an employee from the DOM
 
-**[] - STYLING**
+**[] - STRETCH GOALS**
 
-**[] - STRETCH**
+**[] - CSS STYLING**
 
 - [] -
 - [] -

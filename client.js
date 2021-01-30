@@ -25,7 +25,7 @@ function onReady() {
    *  li = #
    *  form = #
    *  input = #
-   *  button = #
+   *  submit button = #button_addEmployee
    *
    *  List of class references
    *  .red =
@@ -36,6 +36,14 @@ function onReady() {
    *
    */
 
-  console.log('this is my employee list', employee);
-  console.log('this is the length of the employee list');
+  // button click even for the submit employee button
+  $(document).on('click', '#button_addEmployee', addEmployee);
+}
+
+//add Employee function for the click event
+function addEmployee(event) {
+  // stops the from from refreshing with the page to hold the input values
+  event.preventDefault();
+
+  console.log('in side of the add Employee function');
 }
