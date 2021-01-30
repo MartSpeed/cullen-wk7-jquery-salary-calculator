@@ -12,10 +12,10 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 [] - PURPOSE: create an application that records employee salaries and adds salaries up to report monthly cost
 [] - WIREWORKS
-[] a. - index.html
-[] b. - styles.css
-[] c. - jquery.js
-[] d. - client.js
+[x] a. - index.html
+[x] b. - styles.css
+[x] c. - jquery.js
+[x] d. - client.js
 [] - OVERVIEW: The application should have an input form that collects _employee first name, last name, ID number, job title, annual salary_.
 [] - SUBMIT BUTTON: A 'Submit' button should collect the form information
 [] a. - stores the information to calculate monthly cost
