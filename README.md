@@ -25,7 +25,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 **[] - OVERVIEW: The application should have an input form that collects _employee first name, last name, ID number, job title, annual salary_.**
 
 - [] Form to accept employee information
-  - [] created form
+  - [] create form
   - [] add inputs & values
   - [] create classes & ID's
   - [] record classes & ID for quick reference

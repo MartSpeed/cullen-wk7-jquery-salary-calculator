@@ -15,11 +15,45 @@
       PURPOSE: create an application that records employee salaries and adds salaries up to report monthly cost
      -->
     <h1>Salary Calculator</h1>
-    <!-- form tag to wrap the salary content in -->
+    <h2>Add Employee</h2>
+    <!-- form tag start -- to wrap the salary content in -->
+    <!-- do not for get to use the event.preventDefault() method -->
     <form action="">
-      <ul>
-        <li>this is the first item in the list</li>
-      </ul>
+      <!-- 
+        wrapping all the inputs inside a label with a given class/id 
+      -->
+      <label>
+        <!-- 
+        first name input and connected functions 
+      -->
+        <input type="text" placeholder="First Name" id="input-firstName" />
+        <!-- 
+        last name input and connected functions 
+      -->
+        <input type="text" placeholder="Last Name" id="input-lastName" />
+        <!-- 
+        id Number input and connected functions 
+      -->
+        <input type="number" placeholder="id Number" id="input-idNumber" />
+        <!-- 
+        job title input and connected functions 
+      -->
+        <input type="text" placeholder="Job Title" id="input-jobTitle" />
+        <!-- 
+        annual salary input and connected functions 
+      -->
+        <input
+          type="number"
+          placeholder="Annual Salary"
+          id="input-annualSalary"
+        />
+      </label>
+
+      <!-- 
+        submit button and connect functions 
+      -->
+      <button>Submit</button>
     </form>
+    <!-- form tag end -->
   </body>
 </html>
