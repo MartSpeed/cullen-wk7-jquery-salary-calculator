@@ -1,11 +1,17 @@
-/*
-  TITLE: style.css for salary calculator
-*/
+/* TITLE: style.css for salary calculator */
 html {
   margin: 0;
   padding: 0;
+  background-color: #f0e5d8;
 }
 body {
   margin: 0;
   padding: 0;
+  background-color: #75cfb8;
 }
+/* form element selectors */
+/* ul element selectors */
+/* li element selectors */
+/* button element selectors */
+/* input element selectors */
+/* div element selectors */
