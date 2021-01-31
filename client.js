@@ -77,11 +77,13 @@ function addEmployee(event) {
   /**
    * ---variable info to append to---
    * ul = #output_employee
-   * firstName
-   * lastName
-   * idNumber
-   * jobTitle
-   * annual Salary
+   * #firstName
+   * #lastName
+   * #idNumber
+   * #jobTitle
+   * #annual Salary
+   *
+   * #input_firstName
    *
    * Table elements align right to left.
    * Table headers go inside of the table row but before table definitions
@@ -100,4 +102,12 @@ function addEmployee(event) {
   <td>${annualSalary}</td>
   </tr>
 `);
+
+  // clear the inputs after the button is click for new values
+  // use element "ID" values to grab and clear the list after the inputs
+  $('#input_firstName').val('');
+  $('#input_lastName').val('');
+  $('#input_idNumber').val('');
+  $('#input_jobTitle').val('');
+  $('#input_annualSalary').val('');
 }
