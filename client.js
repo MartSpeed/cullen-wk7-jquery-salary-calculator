@@ -21,14 +21,21 @@ function onReady() {
   /**
    *  List of functions, objects and elements that need to be entered
    *
-   *  List of ID references
+   *  ***List of ID references***
    *  ul = #
    *  li = #
    *  form = #
    *  input = #
    *  submit button = #button_addEmployee
    *
-   *  List of class references
+   *  ***Employee Info***
+   *  fistName = #input_firstName
+   *  lastName = #input_lastName
+   *  idNumber = #input_idNumber
+   *  jobTitle = #input_jobTitle
+   *
+   *
+   *  ***List of class references***
    *  .red =
    *  .yellow =
    *  .green =
@@ -46,6 +53,11 @@ function addEmployee(event) {
   // stops the from from refreshing with the page to hold the input values
   event.preventDefault();
 
-  console.log('inside of the add Employee function');
-  console.log('this is the first name', employee.firstName);
+  // grabbing the employee information
+  // starting with first name in the console test
+  // variable names for input values
+  let firstName = $('#input_firstName').val();
+  let lastName = $('#input_lastName').val();
+  let idNumber = $('#input_idNumber').val();
+  let jobTitle = $('#input_jobTitle').val();
 }
