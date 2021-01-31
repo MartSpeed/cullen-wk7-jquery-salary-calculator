@@ -24,25 +24,21 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 **[] - OVERVIEW: The application should have an input form that collects _employee first name, last name, ID number, job title, annual salary_.**
 
-- [] Form to accept employee information
+- [] Table to accept employee information
   - [x] create form
   - [x] add inputs & values
-    - [] create variables for name inputs
-    - [] append the name inputs
-    - [] append the delete button info into the submit button on click even.
-    - [] empty string data after the submit button has been clicked
+    - [x] create variables for name inputs
+    - [x] append the name inputs
+    - [] add the delete button info into the submit button on click event. Go to delete button topic.
+    - [x] empty string data after the submit button has been clicked
     - [] push items into array
-  - [] create classes & ID's
-  - [] record classes & ID for quick reference
-  - [x] first name
-  - [] first name function
-  - [x] last name
-  - [] last name function
-  - [x] ID number
-  - [] ID number function
-  - [x] job title
-  - [] job title function
-  - [x] annual salary
+  - [x] create classes & ID's
+  - [x] record classes & ID for quick reference
+  - [x] first name variable
+  - [x] last name variable
+  - [x] ID number variable
+  - [x] job title variable
+  - [x] annual salary variable
   - [] annual salary function
   - [] salary calculator
 

@@ -27,6 +27,9 @@ th {
   text-align: center;
   padding: 8px;
 }
+.button_filler {
+  padding: 8px;
+}
 /* table definition element selectors */
 td {
   text-align: left;

@@ -22,8 +22,10 @@ function onReady() {
    *  List of functions, objects and elements that need to be entered
    *
    *  ***List of ID references***
-   *  ul = #output_employee
-   *  li = #
+   *  table = #output_employee
+   *  td = #
+   *  th = #
+   *  tr = #
    *  form = #
    *  input = #
    *  submit button = #button_addEmployee
@@ -35,9 +37,6 @@ function onReady() {
    *  jobTitle = #input_jobTitle
    *  annualSalary = #input_annualSalary
    *
-   *
-   *
-   *
    *  ***List of class references***
    *  .red =
    *  .yellow =
@@ -46,12 +45,18 @@ function onReady() {
    *
    *
    */
-
+  // this is the deleteEmployee function
+  // [] delete the employee
+  // [] remove employee firstName value
+  // [] remove employee lastName value
+  // [] remove employee idNumber value
+  // [] remove employee jobTitle value
   // button click even for the submit employee button
-  $(document).on('click', '#button_addEmployee', addEmployee);
+  $(document).on('click', '.input_employeeDelete', deleteEmployee);
+  $('#button_addEmployee').on('click', addEmployee);
 }
 
-//add Employee function for the click event
+// addEmployee function for the click event
 function addEmployee(event) {
   // stops the from from refreshing with the page to hold the input values when using the submit button
   event.preventDefault();
@@ -92,6 +97,8 @@ function addEmployee(event) {
    * table row = <tr></tr>
    * table = <table></table>
    * table definition = <td></td>
+   *
+   *
    */
   $('#output_employee').append(`
   <tr>
@@ -100,6 +107,7 @@ function addEmployee(event) {
   <td>${idNumber}</td>
   <td>${jobTitle}</td>
   <td>${annualSalary}</td>
+  <td><button class="input_employeeDelete">Delete</button></td>
   </tr>
 `);
 
@@ -110,4 +118,10 @@ function addEmployee(event) {
   $('#input_idNumber').val('');
   $('#input_jobTitle').val('');
   $('#input_annualSalary').val('');
+}
+// deleteEmployee function for the click event
+function deleteEmployee() {
+  // use the this method to make this item be removed only
+  let deleteThis = $(this);
+  console.log('this is the thing being deleted', deleteThis);
 }
