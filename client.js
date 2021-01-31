@@ -50,7 +50,7 @@ function onReady() {
   $(document).on('click', '.input_employeeDelete', deleteEmployee);
 
   // click to test the salary function
-  $(document).on('click', monthlySalary);
+  $('#button_addEmployee').on('click', monthlySalary);
 
   // button click event for the submit employee button
   $('#button_addEmployee').on('click', addEmployee);
@@ -137,19 +137,20 @@ function deleteEmployee() {
   //let deleteThis = $('input[name="option"]').remove();
   //console.log('this is the thing being deleted', deleteThis);
 
-  $('#input_firstName').val('');
-  $('#input_lastName').val('');
-  $('#input_idNumber').val('');
-  $('#input_jobTitle').val('');
+  //$('#input_firstName').val('');
+  //$('#input_lastName').val('');
+  //$('#input_idNumber').val('');
+  //$('#input_jobTitle').val('');
+
   // empty the table data with the class of remove only
-  $('.remove').empty();
+  $('td').remove();
   console.log('after the click', employee);
 }
 // function for the monthly salary calculator
 // needs to sum up the total of the salaries
 // the salaries need to be divided by the total amount of listed salaries
 // output the salary values onto the dom, added and subtracted
-function monthlySalary() {
+function monthlySalary(Number) {
   console.log('in monthly salary');
   console.log(employee);
 }
