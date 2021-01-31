@@ -31,7 +31,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     - [x] append the name inputs
     - [x] add the delete button info into the submit button on click event. Go to delete button topic.
     - [x] empty string data after the submit button has been clicked
-    - [] push items into array
+    - [x] push items into array
   - [x] create classes & ID's
   - [x] record classes & ID for quick reference
   - [x] first name variable
@@ -40,7 +40,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
   - [x] job title variable
   - [x] annual salary variable
   - [] annual salary function
-  - [] salary calculator
+  - [] monthly salary calculator
 
 **[] - SUBMIT BUTTON: A 'Submit' button should collect the form information**
 
@@ -48,7 +48,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 - [] b. - append information to the DOM
 
-- [] c. - clear the input fields.
+- [x] c. - clear the input fields.
 
 - [] d. - calculate monthly cost and append it to the DOM
 
@@ -58,7 +58,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 **[] - DELETE BUTTON: delete button that removes an employee from the DOM**
 
-- [] a. - removes an employee from the DOM
+- [] a. - removes an employee from the DOM when clicked
 - [] b. - remove all info except for the salary
 
 **[] - STRETCH GOALS**

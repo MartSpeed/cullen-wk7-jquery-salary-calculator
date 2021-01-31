@@ -49,6 +49,9 @@ function onReady() {
   // button click event for the deleteEmployee button
   $(document).on('click', '.input_employeeDelete', deleteEmployee);
 
+  // click to test the salary function
+  $(document).on('click', monthlySalary);
+
   // button click event for the submit employee button
   $('#button_addEmployee').on('click', addEmployee);
 }
@@ -109,10 +112,10 @@ function addEmployee(event) {
 
   $('#output_employee').append(`
   <tr>
-  <td>${_firstName}</td>
-  <td>${_lastName}</td>
-  <td>${_idNumber}</td>
-  <td>${_jobTitle}</td>
+  <td class="remove">${_firstName}</td>
+  <td class="remove">${_lastName}</td>
+  <td class="remove">${_idNumber}</td>
+  <td class="remove">${_jobTitle}</td>
   <td>${_annualSalary}</td>
   <td><button class="input_employeeDelete">Delete</button></td>
   </tr>
@@ -126,7 +129,7 @@ function addEmployee(event) {
   $('#input_jobTitle').val('');
   $('#input_annualSalary').val('');
 
-  console.log(employee);
+  console.log('before the click', employee);
 }
 // deleteEmployee function for the click event
 function deleteEmployee() {
@@ -138,11 +141,15 @@ function deleteEmployee() {
   $('#input_lastName').val('');
   $('#input_idNumber').val('');
   $('#input_jobTitle').val('');
-  //console.log('this is the cleared item', firstName);
-  // removing the column of nth number replaced by ($this) function method
-  //console.log('this', deleteThis);
-
-  $('table body tr td').slice(0, 2).siblings().remove();
-  console.log(`this is removed ${employee}`);
-  console.log('this is being removed', $(this).remove());
+  // empty the table data with the class of remove only
+  $('.remove').empty();
+  console.log('after the click', employee);
+}
+// function for the monthly salary calculator
+// needs to sum up the total of the salaries
+// the salaries need to be divided by the total amount of listed salaries
+// output the salary values onto the dom, added and subtracted
+function monthlySalary() {
+  console.log('in monthly salary');
+  console.log(employee);
 }
