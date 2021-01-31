@@ -29,7 +29,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
   - [x] add inputs & values
     - [x] create variables for name inputs
     - [x] append the name inputs
-    - [] add the delete button info into the submit button on click event. Go to delete button topic.
+    - [x] add the delete button info into the submit button on click event. Go to delete button topic.
     - [x] empty string data after the submit button has been clicked
     - [] push items into array
   - [x] create classes & ID's
@@ -59,6 +59,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 **[] - DELETE BUTTON: delete button that removes an employee from the DOM**
 
 - [] a. - removes an employee from the DOM
+- [] b. - remove all info except for the salary
 
 **[] - STRETCH GOALS**
 

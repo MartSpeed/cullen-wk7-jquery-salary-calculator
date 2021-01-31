@@ -6,13 +6,8 @@ $(document).ready(onReady);
 // each key will be assigned a function or number
 // use the Number method to return whole numbers.
 // remember the use of ParseInt() and ParseFloat()
-let employee = {
-  firstName: 'firstName',
-  lastName: 'lastName',
-  idNumber: 0,
-  jobTitle: 'jobTitle',
-  annualSalary: 0,
-};
+
+let employee = [];
 
 function onReady() {
   // jQuery console test
@@ -43,16 +38,18 @@ function onReady() {
    *  .green =
    *  .blue =
    *
-   *
+   *this is the deleteEmployee function
+   * [] delete the employee
+   * [] remove employee firstName value
+   * [] remove employee lastName value
+   * [] remove employee idNumber value
+   * [] remove employee jobTitle value
    */
-  // this is the deleteEmployee function
-  // [] delete the employee
-  // [] remove employee firstName value
-  // [] remove employee lastName value
-  // [] remove employee idNumber value
-  // [] remove employee jobTitle value
-  // button click even for the submit employee button
+
+  // button click event for the deleteEmployee button
   $(document).on('click', '.input_employeeDelete', deleteEmployee);
+
+  // button click event for the submit employee button
   $('#button_addEmployee').on('click', addEmployee);
 }
 
@@ -63,19 +60,28 @@ function addEmployee(event) {
 
   // grabbing the employee information
   // variable names for input values
-  let firstName = $('#input_firstName').val();
-  let lastName = $('#input_lastName').val();
-  let idNumber = $('#input_idNumber').val();
-  let jobTitle = $('#input_jobTitle').val();
-  let annualSalary = $('#input_annualSalary').val();
+  let _firstName = $('#input_firstName').val();
+  let _lastName = $('#input_lastName').val();
+  let _idNumber = $('#input_idNumber').val();
+  let _jobTitle = $('#input_jobTitle').val();
+  let _annualSalary = $('#input_annualSalary').val();
+
+  const employeeInfo = {
+    firstName: _firstName,
+    lastName: _lastName,
+    idNumber: _idNumber,
+    jobTitle: _jobTitle,
+    annualSalary: _annualSalary,
+  };
+  employee.push(employeeInfo);
 
   /*
   ***TODO***
   [x] append the information to the unordered list
   [] push that information into a new array and store it
-  [] create a delete button for the input fields
+  [x] create a delete button for the input fields
   [] delete button should remove the appended item only using the $(this) jQuery method
-  [] submit button should clear the field when clicked
+  [x] submit button should clear the field when clicked
   */
   console.log('**THIS IS THE APPEND TEST***');
 
@@ -100,13 +106,14 @@ function addEmployee(event) {
    *
    *
    */
+
   $('#output_employee').append(`
   <tr>
-  <td>${firstName}</td>
-  <td>${lastName}</td>
-  <td>${idNumber}</td>
-  <td>${jobTitle}</td>
-  <td>${annualSalary}</td>
+  <td>${_firstName}</td>
+  <td>${_lastName}</td>
+  <td>${_idNumber}</td>
+  <td>${_jobTitle}</td>
+  <td>${_annualSalary}</td>
   <td><button class="input_employeeDelete">Delete</button></td>
   </tr>
 `);
@@ -118,10 +125,24 @@ function addEmployee(event) {
   $('#input_idNumber').val('');
   $('#input_jobTitle').val('');
   $('#input_annualSalary').val('');
+
+  console.log(employee);
 }
 // deleteEmployee function for the click event
 function deleteEmployee() {
   // use the this method to make this item be removed only
-  let deleteThis = $(this);
-  console.log('this is the thing being deleted', deleteThis);
+  //let deleteThis = $('input[name="option"]').remove();
+  //console.log('this is the thing being deleted', deleteThis);
+
+  $('#input_firstName').val('');
+  $('#input_lastName').val('');
+  $('#input_idNumber').val('');
+  $('#input_jobTitle').val('');
+  //console.log('this is the cleared item', firstName);
+  // removing the column of nth number replaced by ($this) function method
+  //console.log('this', deleteThis);
+
+  $('table body tr td').slice(0, 2).siblings().remove();
+  console.log(`this is removed ${employee}`);
+  console.log('this is being removed', $(this).remove());
 }
