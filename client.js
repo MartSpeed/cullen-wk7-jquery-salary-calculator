@@ -22,7 +22,7 @@ function onReady() {
    *  List of functions, objects and elements that need to be entered
    *
    *  ***List of ID references***
-   *  ul = #
+   *  ul = #output_employee
    *  li = #
    *  form = #
    *  input = #
@@ -33,6 +33,9 @@ function onReady() {
    *  lastName = #input_lastName
    *  idNumber = #input_idNumber
    *  jobTitle = #input_jobTitle
+   *  annualSalary = #input_annualSalary
+   *
+   *
    *
    *
    *  ***List of class references***
@@ -50,14 +53,51 @@ function onReady() {
 
 //add Employee function for the click event
 function addEmployee(event) {
-  // stops the from from refreshing with the page to hold the input values
+  // stops the from from refreshing with the page to hold the input values when using the submit button
   event.preventDefault();
 
   // grabbing the employee information
-  // starting with first name in the console test
   // variable names for input values
   let firstName = $('#input_firstName').val();
   let lastName = $('#input_lastName').val();
   let idNumber = $('#input_idNumber').val();
   let jobTitle = $('#input_jobTitle').val();
+  let annualSalary = $('#input_annualSalary').val();
+
+  /*
+  ***TODO***
+  [x] append the information to the unordered list
+  [] push that information into a new array and store it
+  [] create a delete button for the input fields
+  [] delete button should remove the appended item only using the $(this) jQuery method
+  [] submit button should clear the field when clicked
+  */
+  console.log('**THIS IS THE APPEND TEST***');
+
+  /**
+   * ---variable info to append to---
+   * ul = #output_employee
+   * firstName
+   * lastName
+   * idNumber
+   * jobTitle
+   * annual Salary
+   *
+   * Table elements align right to left.
+   * Table headers go inside of the table row but before table definitions
+   * Table definitions go inside of the table rows but after table headers
+   * table headers = <th></th>
+   * table row = <tr></tr>
+   * table = <table></table>
+   * table definition = <td></td>
+   */
+  $('#output_employee').append(`
+  <tr>
+  <td>${firstName}</td>
+  <td>${lastName}</td>
+  <td>${idNumber}</td>
+  <td>${jobTitle}</td>
+  <td>${annualSalary}</td>
+  </tr>
+`);
 }

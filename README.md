@@ -26,7 +26,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 - [] Form to accept employee information
   - [x] create form
-  - [] add inputs & values
+  - [x] add inputs & values
     - [] create variables for name inputs
     - [] append the name inputs
     - [] append the delete button info into the submit button on click even.

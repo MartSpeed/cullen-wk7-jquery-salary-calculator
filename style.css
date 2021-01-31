@@ -1,17 +1,41 @@
 /* TITLE: style.css for salary calculator */
+:root {
+  --bg1: #75cfb8;
+  --bg2: #f0e5d8;
+  --bg3: #ffc478;
+  --bg4: #bbdfc8;
+}
 html {
   margin: 0;
   padding: 0;
-  background-color: #f0e5d8;
+  background: var(--bg1);
 }
 body {
   margin: 0;
   padding: 0;
-  background-color: #75cfb8;
 }
 /* form element selectors */
-/* ul element selectors */
-/* li element selectors */
+
+/* table element selectors */
+table {
+  margin: auto;
+  border: 1px solid var(--bg3);
+}
+/* table header element selectors */
+th {
+  border: 1px solid var(--bg4);
+  text-align: center;
+  padding: 8px;
+}
+/* table definition element selectors */
+td {
+  text-align: left;
+  border: 1px solid var(--bg4);
+  padding: 8px;
+}
 /* button element selectors */
 /* input element selectors */
+input {
+  padding: 8px;
+}
 /* div element selectors */
