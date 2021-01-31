@@ -9,10 +9,11 @@ $(document).ready(onReady);
 let employee = {
   firstName: 'firstName',
   lastName: 'lastName',
-  idNumber: Number(0),
+  idNumber: 0,
   jobTitle: 'jobTitle',
-  annualSalary: Number(0),
+  annualSalary: 0,
 };
+
 function onReady() {
   // jQuery console test
   console.log('jQuery Activated');
@@ -45,5 +46,6 @@ function addEmployee(event) {
   // stops the from from refreshing with the page to hold the input values
   event.preventDefault();
 
-  console.log('in side of the add Employee function');
+  console.log('inside of the add Employee function');
+  console.log('this is the first name', employee.firstName);
 }
