@@ -150,7 +150,21 @@ function deleteEmployee() {
 // needs to sum up the total of the salaries
 // the salaries need to be divided by the total amount of listed salaries
 // output the salary values onto the dom, added and subtracted
-function monthlySalary(Number) {
+function monthlySalary() {
+  // max variable for color change conditional in the stretch goals.
+  let salaryMax = 20000;
+  let salaryIndex = employeeIndex;
+  for (
+    let employeeIndex = 0;
+    employeeIndex < employee[employee.length];
+    employeeIndex++
+  ) {
+    employeeIndex += employee[employeeIndex.length];
+  }
+  if (salaryIndex > salaryMax) {
+    console.log('this is red');
+  }
+
   console.log('in monthly salary');
   console.log(employee);
 }
