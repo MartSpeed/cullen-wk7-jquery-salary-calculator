@@ -153,13 +153,19 @@ function deleteEmployee() {
 function monthlySalary() {
   // max variable for color change conditional in the stretch goals.
   let salaryMax = 20000;
-  let salaryIndex = employeeIndex;
+  let totalMonthlySalary = 0;
+
   for (
     let employeeIndex = 0;
-    employeeIndex < employee[employee.length];
+    employeeIndex < employee.length;
     employeeIndex++
   ) {
-    employeeIndex += employee[employeeIndex.length];
+    // employee index is grabbing the value employeeIndex
+    // employeeIndex is set at 0 inside the array object
+    // the dot salary object dot operator method is called
+    // this looks at the index of the array using the variable employeeIndex
+    // to locate the annualSalary object key value
+    employeeIndex += employee[employeeIndex]._annualSalary;
   }
   if (salaryIndex > salaryMax) {
     console.log('this is red');
