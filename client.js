@@ -50,7 +50,7 @@ function onReady() {
   $(document).on('click', '.input_employeeDelete', deleteEmployee);
 
   // click to test the salary function
-  $('#button_addEmployee').on('click', monthlySalary);
+  //$('#button_addEmployee').on('click', monthlySalary);
 
   // button click event for the submit employee button
   $('#button_addEmployee').on('click', addEmployee);
@@ -74,7 +74,7 @@ function addEmployee(event) {
     lastName: _lastName,
     idNumber: _idNumber,
     jobTitle: _jobTitle,
-    annualSalary: _annualSalary,
+    annualSalary: Number(_annualSalary),
   };
   employee.push(employeeInfo);
 
@@ -130,6 +130,8 @@ function addEmployee(event) {
   $('#input_annualSalary').val('');
 
   console.log('before the click', employee);
+  // needs to be called inside the addEmployee function and not ran during the document start up process
+  monthlySalary();
 }
 // deleteEmployee function for the click event
 function deleteEmployee() {
@@ -165,12 +167,13 @@ function monthlySalary() {
     // the dot salary object dot operator method is called
     // this looks at the index of the array using the variable employeeIndex
     // to locate the annualSalary object key value
-    employeeIndex += employee[employeeIndex]._annualSalary;
+    totalMonthlySalary += employee[employeeIndex].annualSalary;
   }
-  if (salaryIndex > salaryMax) {
-    console.log('this is red');
-  }
+  // divide the annual salary by the number of month in a year
+  totalMonthSalary /= 12;
 
-  console.log('in monthly salary');
+  // if statement for if totalMonthlySalary > salaryMax tun red
+
+  console.log('total monthly salary', totalMonthlySalary);
   console.log(employee);
 }
