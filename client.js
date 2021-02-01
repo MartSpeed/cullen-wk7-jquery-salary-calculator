@@ -145,7 +145,9 @@ function deleteEmployee() {
   //$('#input_jobTitle').val('');
 
   // empty the table data with the class of remove only
-  $('td').remove();
+  // jquery grabs the closest parent element
+  // from the value of 'tr'
+  $(this).closest('tr').empty();
   console.log('after the click', employee);
 }
 // function for the monthly salary calculator
@@ -170,10 +172,10 @@ function monthlySalary() {
     totalMonthlySalary += employee[employeeIndex].annualSalary;
   }
   // divide the annual salary by the number of month in a year
-  totalMonthSalary /= 12;
+  let totalMonthly = totalMonthlySalary / 12;
 
   // if statement for if totalMonthlySalary > salaryMax tun red
 
-  console.log('total monthly salary', totalMonthlySalary);
-  console.log(employee);
+  console.log('total monthly salary', totalMonthly);
+  //console.log(employee);
 }

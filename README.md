@@ -39,14 +39,14 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
   - [x] ID number variable
   - [x] job title variable
   - [x] annual salary variable
-  - [] annual salary function
-  - [] monthly salary calculator
+  - [x] annual salary function
+  - [x] monthly salary calculator
 
 **[] - SUBMIT BUTTON: A 'Submit' button should collect the form information**
 
-- [] a. - stores the information to calculate monthly cost
+- [x] a. - stores the information to calculate monthly cost
 
-- [] b. - append information to the DOM
+- [x] b. - append information to the DOM
 
 - [x] c. - clear the input fields.
 
@@ -58,8 +58,8 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 **[] - DELETE BUTTON: delete button that removes an employee from the DOM**
 
-- [] a. - removes an employee from the DOM when clicked
-- [] b. - remove all info except for the salary
+- [x] a. - removes an employee from the DOM when clicked
+- [x] b. - remove all info except for the salary
 
 **[] - STRETCH GOALS**
 
