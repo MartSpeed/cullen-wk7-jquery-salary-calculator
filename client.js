@@ -39,11 +39,11 @@ function onReady() {
    *  .blue =
    *
    *this is the deleteEmployee function
-   * [] delete the employee
-   * [] remove employee firstName value
-   * [] remove employee lastName value
-   * [] remove employee idNumber value
-   * [] remove employee jobTitle value
+   * [x] delete the employee
+   * [x] remove employee firstName value
+   * [x] remove employee lastName value
+   * [x] remove employee idNumber value
+   * [x] remove employee jobTitle value
    */
 
   // button click event for the deleteEmployee button
